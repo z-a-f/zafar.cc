@@ -1,0 +1,22 @@
+{
+  "name": "Zafar's Page",
+  "description": "Zafar's personal website",
+  "homepage": "www.zafar.cc",
+  "keywords": [
+  ],
+  "author": "Zafar Takhirov",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#master",
+    "core-drawer-panel": "Polymer/core-drawer-panel#master",
+    "core-header-panel": "Polymer/core-header-panel#master",
+    "core-icon-button": "Polymer/core-icon-button#master",
+    "core-item": "Polymer/core-item#master",
+    "core-menu": "Polymer/core-menu#master",
+    "core-scroll-header-panel": "Polymer/core-scroll-header-panel",
+    "core-toolbar": "Polymer/core-toolbar#master",
+    "core-tooltip": "Polymer/core-tooltip#master",
+
+    "paper-toast": "Polymer/paper-toast#master"
+  }
+}

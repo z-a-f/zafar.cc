@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>sampler-scaffold</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+
+  <link rel="import" href="elements/main-scaffold/main-scaffold.html">
+  <link rel="import" href="bower_components/core-item/core-item.html">
+  <link rel="import" href="bower_components/core-menu/core-menu.html">
+  <link rel="import" href="bower_components/core-menu/core-submenu.html">
+
+  <link rel="import"
+    href="bower_components/font-roboto/roboto.html">
+
+  <style>
+
+    body {
+      font-family: RobotoDraft, sans-serif;
+        color: #333;
+        margin: 0;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-touch-callout: none;
+    }
+
+  </style>
+
+</head>
+
+<body unresolved>
+
+  <main-scaffold label="Zafar's Test Page :)">
+    <core-item label="About Me..." url="pages/AboutMe/index.html"></core-item>
+    <core-menu selected="0">
+      <core-item label="String 1" url="pages/test.html"></core-item>
+      <core-submenu icon="settings" label="Topics">
+      <core-item label="String 2" url="pages/test2.html"></core-item>
+      <core-item label="String 3 (external)" url="http://people.bu.edu/zafar/"></core-item>
+      </core-submenu>
+    </core-menu>
+  </main-scaffold>
+
+</body>
+</html>

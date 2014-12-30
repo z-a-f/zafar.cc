@@ -1,13 +1,27 @@
-# Deny access to everything by default
-Order Deny,Allow
-deny from all
+# Server options
+Options \
+	+ExecCGI \
+	-Indexes
+# Directory indexing pages (default is `index.html`)
+DirectoryIndex index.html index.htm index.php 
+DefaultLanguage en-US
+AddDefaultCharset UTF-8
+# Disable server signature to prevent attacks:
+ServerSignature Off	
 
-# Allow access to html files
-<Files *.html>
-    allow from all
-</Files>
+# Not found error
+ErrorDocument 404 /error-404/
 
-# Deny access to sub directory
-<Files subdirectory/*>
-    deny from all
-</Files>
+# css/xhtml check jigsaw.w3.org/css-validator/
+Allow from w3.org            
+# Allows google to crawl your pages
+Allow from googlebot.com     
+
+# Redirect to www.*
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^zafar.cc [NC]
+RewriteRule (.*) http://www.zafar.cc/$1 [L,R=301]
+
+## LIMIT UPLOAD FILE SIZE TO PROTECT AGAINST DOS ATTACK in bytes, 0-2147483647(2GB)
+LimitRequestBody 10240000 
+

@@ -13,7 +13,7 @@
     "core-icon-button": "Polymer/core-icon-button#master",
     "core-item": "Polymer/core-item#master",
     "core-menu": "Polymer/core-menu#master",
-    "core-scroll-header-panel": "Polymer/core-scroll-header-panel",
+    "core-scroll-header-panel": "Polymer/core-scroll-header-panel#master",
     "core-toolbar": "Polymer/core-toolbar#master",
     "core-tooltip": "Polymer/core-tooltip#master",
 

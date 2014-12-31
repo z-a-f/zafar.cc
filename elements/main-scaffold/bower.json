@@ -1,5 +1,6 @@
 {
   "name": "main-scaffold",
+  "private": true,
   "dependencies": {
     "core-drawer-panel": "Polymer/core-drawer-panel#master",
     "core-header-panel": "Polymer/core-header-panel#master",

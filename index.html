@@ -10,25 +10,33 @@
 
   <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
 
-  <link rel="import" href="elements/main-scaffold/main-scaffold.html">
+  <!-- Add Polymer elements -->
   <link rel="import" href="bower_components/core-item/core-item.html">
-  <link rel="import" href="bower_components/core-menu/core-menu.html">
   <link rel="import" href="bower_components/core-menu/core-submenu.html">
 
-  <link rel="import" href="bower_components/font-roboto/roboto.html">
+  <!-- Add custom elements -->
+  <link rel="import" href="elements/main-scaffold/main-scaffold.html">
+
 
 </head>
 
 <body unresolved>
-
-  <main-scaffold label="Zafar's Test Page :)">
-    <core-item label="About Me..." url="pages/AboutMe/index.html"></core-item>
-    <core-item label="String 1" url="pages/test.html"></core-item>
+  <main-scaffold label="I'll change the logo later :)" logosrc="images/lockup.svg">
+    <core-item icon="favorite" label="Welcome" url="pages/test.html"></core-item>
+    <core-submenu icon="work" label="Work and Education">
+      <core-item label="Publications" url="pages/test.html"></core-item>
+      <core-item label="Courses" url="pages/test.html"></core-item>
+      <core-item label="Resume" url="pages/test.html"></core-item>
+    </core-submenu>
     <core-submenu icon="explore" label="Explore experiments">
       <core-item label="String 2" url="pages/test2.html"></core-item>
     </core-submenu>
-    <core-item label="people.bu.edu/zafar" url="http://people.bu.edu/zafar/"></core-item>
+    <core-submenu icon="account-circle" label="About me...">
+      <core-item label="Let me introduce" url="pages/AboutMe/index.html"></core-item>
+      <core-item label="Resume" url="pages/test.html"></core-item>
+      <core-item label="people.bu.edu/zafar" url="http://people.bu.edu/zafar/"></core-item>
+    </core-submenu>
+    <core-item label="Contact information" icon="mail" url="pages/test.html"></core-item>
   </main-scaffold>
-
 </body>
 </html>

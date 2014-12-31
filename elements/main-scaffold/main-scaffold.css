@@ -162,3 +162,29 @@ polyfill-next-selector { content: '#drawerPanel:not([narrow]) .menuButton';}
   left: auto;
   padding-right: 60px;
 }
+
+#logo-container {
+  top: 50px;
+  bottom: auto;
+}
+
+
+/* Links */
+a:link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #CCCCCC;
+  text-decoration: none;
+}
+
+a:active {
+  color: #CCCCCC;
+  text-decoration: none;
+}

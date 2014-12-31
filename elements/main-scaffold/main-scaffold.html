@@ -48,7 +48,7 @@ of the scaffold.
 
 <link rel="import" href="../../bower_components/paper-toast/paper-toast.html">
 
-<polymer-element name="main-scaffold" attributes="label responsiveWidth">
+<polymer-element name="main-scaffold" attributes="label logosrc responsiveWidth">
 <template>
 
   <link rel="stylesheet" href="main-scaffold.css">
@@ -85,17 +85,13 @@ of the scaffold.
             </core-tooltip>
           </div>
         </content>
-
       </core-toolbar>
 
       <div id="card" on-transitionend="{{cardTransitionDone}}" hidden?="{{!item}}">
-
         <div class="element-label" hidden?="{{narrow}}">{{item.label}}</div>
-
         <div id="frameContainer">
           <iframe id="frame" on-load="{{frameLoaded}}"></iframe>
         </div>
-
       </div>
 
     </core-header-panel>
@@ -103,15 +99,20 @@ of the scaffold.
     <core-header-panel drawer>
 
       <core-toolbar class="{{ {'medium-tall' : !narrow} | tokenList }}">
-        <div class="bottom main-label fit">{{label}}</div>
+        <div class="bottom main-label fit">
+          <!-- TODO: Put logo here later and bind it to the {{logosrc}} attribute. -->
+          <div flex hidden?= {{narrow}} class="logo-container" center horizontal>
+            <a href="/"><img src={{logosrc}}></a>
+          </div>
+          <div><a href="/">{{label}}</a></div>
+        </div>
+
       </core-toolbar>
 
       <core-menu id="menu" on-core-select="{{menuSelect}}">
         <content></content>
       </core-menu>
-
     </core-header-panel>
-
   </core-drawer-panel>
   <paper-toast id="scaffoldToast" class="capsule" text=""></paper-toast>
 </template>
@@ -248,6 +249,7 @@ of the scaffold.
       // window.open('view-source:' + this.$.frame.contentWindow.location.href, this.item.tag);
       try {
         window.open(this.$.frame.contentWindow.location.href, this.item.tag);
+        // window.open(this.$.frame.contentWindow.location.href, '_blank');
       } catch (err) {
         // For now, just show error to the user:
         this.$.scaffoldToast.text = err.message

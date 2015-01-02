@@ -1,0 +1,8 @@
+{
+  "name": "main-scaffold",
+  "private": true,
+  "dependencies": {
+    "paper-icon-button": "Polymer/paper-icon-button#master",
+    "paper-dropdown": "Polymer/paper-dropdown#master"
+  }
+}

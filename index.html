@@ -13,10 +13,15 @@
   <!-- Add Polymer elements -->
   <link rel="import" href="bower_components/core-item/core-item.html">
   <link rel="import" href="bower_components/core-menu/core-submenu.html">
+  <link rel="import" href="bower_components/core-collapse/core-collapse.html">
+  <link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
+  <link rel="import" href="bower_components/paper-dropdown/paper-dropdown.html">
 
   <!-- Add custom elements -->
   <link rel="import" href="elements/main-scaffold/main-scaffold.html">
+  <link rel="import" href="elements/x-trigger/x-trigger.html">
 
+  <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -38,6 +43,26 @@
       <core-item label="people.bu.edu/zafar" url="http://people.bu.edu/zafar/"></core-item>
     </core-submenu>
     <core-item label="Contact information" icon="mail" url="pages/test.html"></core-item>
+    <core-item id="menu-footer"> <!-- Consider using div here -->
+      This is a menu footer - I'll put some links here later
+    </core-item>
   </main-scaffold>
+  <div id="right-footer">
+    <core-icon-button id="menuButtonFooter" onclick="buttonToggleAndHide(this)" icon="menu"></core-icon-button>
+    <core-collapse id="collapse" horizontal>
+      <core-icon-button onclick="buttonToggleAndHide(this)" icon="menu"></core-icon-button>
+      <a href="https://www.polymer-project.org/" target="_blank"><core-icon-button icon="polymer"></core-icon-button></a>
+      <a href="#null" target="_blank"><core-icon-button icon="mail"></core-icon-button></a>
+      <a href="#1" target="_blank"><core-icon-button icon="settings"></core-icon-button></a>
+    </core-collapse>
+  </div>
 </body>
+
+<script>
+  function buttonToggleAndHide(elem) {
+    document.getElementById('collapse').toggle();
+    var e = document.getElementById('menuButtonFooter');
+    e.style.display = (e.style.display == 'none') ? 'inline' : 'none';
+  }
+</script>
 </html>

@@ -15,10 +15,59 @@ body {
   width: 32px;
 }
 
-.menu-footer {
-  position: absolute;
+#menu-footer {
+  /* position: relative; /* For long menu */
+  position: absolute; /* For short menu */
+  overflow: scroll;
+  /* Uncomment to make footer right side aligned
   left: auto;
-  right: 10px;
+  right: 20px;
+  */
   top: auto;
   bottom: 10px;
+  opacity: 0.4;
 }
+
+#right-footer {
+  /* position: relative; /* For long menu */
+  position: absolute; /* For short menu */
+  /* Uncomment to make footer right side aligned */
+  left: auto;
+  right: 0px;
+  top: auto;
+  bottom: 0px;
+  padding: 10px;
+  opacity: 0.5;
+}
+
+#right-footer core-icon-button {
+  position: relative;
+  padding: 0px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+#right-footer#collapse {
+  position: relative;
+  float: left;
+  left: auto;
+  right: 0px;
+  top: auto;
+  bottom: 0px;
+  padding: 0px;
+}
+
+#right-footer#collapse a {
+  display: inline;
+}
+
+#right-footer#collapse a core-icon-button {
+  display: inline;
+}
+
+paper-dropdown::shadow #ripple
+
+
+

@@ -168,7 +168,6 @@ polyfill-next-selector { content: '#drawerPanel:not([narrow]) .menuButton';}
   bottom: auto;
 }
 
-
 /* Links */
 a:link {
   color: #FFFFFF;

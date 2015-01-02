@@ -100,7 +100,6 @@ of the scaffold.
 
       <core-toolbar class="{{ {'medium-tall' : !narrow} | tokenList }}">
         <div class="bottom main-label fit">
-          <!-- TODO: Put logo here later and bind it to the {{logosrc}} attribute. -->
           <div flex hidden?= {{narrow}} class="logo-container" center horizontal>
             <a href="/"><img src={{logosrc}}></a>
           </div>
@@ -112,6 +111,7 @@ of the scaffold.
       <core-menu id="menu" selectedItem="{{selectedMenu}}" on-core-select="{{menuSelect}}">
         <content></content>
       </core-menu>
+
     </core-header-panel>
   </core-drawer-panel>
   <paper-toast id="scaffoldToast" class="capsule" text=""></paper-toast>

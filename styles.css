@@ -14,3 +14,11 @@ body {
   height: 32px;
   width: 32px;
 }
+
+.menu-footer {
+  position: absolute;
+  left: auto;
+  right: 10px;
+  top: auto;
+  bottom: 10px;
+}

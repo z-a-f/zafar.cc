@@ -1,0 +1,8 @@
+paper-dropdown::shadow #ripple,
+paper-dropdown::shadow #background {
+    background-color: white;
+}
+
+x-trigger {
+  z-index: auto;
+}

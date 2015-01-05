@@ -20,6 +20,7 @@
   <!-- Add custom elements -->
   <link rel="import" href="elements/main-scaffold/main-scaffold.html">
   <link rel="import" href="elements/x-trigger/x-trigger.html">
+  <link rel="import" href="elements/zaf-dropdown/zaf-dropdown.html">
 
   <link rel="stylesheet" href="styles.css">
 
@@ -48,21 +49,33 @@
     </core-item>
   </main-scaffold>
   <div id="right-footer">
-    <core-icon-button id="menuButtonFooter" onclick="buttonToggleAndHide(this)" icon="menu"></core-icon-button>
-    <core-collapse id="collapse" horizontal>
+    <zaf-dropdown halign="right">
+      <paper-icon-button
+        src="images/icons/github-32px.png"
+        onclick="openURL('//github.com/zafartahirov/zafar.cc','_blank')"></paper-icon-button>
+      <paper-icon-button
+        icon="polymer"
+        onclick="openURL('//www.polymer-project.org', '_blank')"></paper-icon-button>
+    </zaf-dropdown>
+    <!-- core-collapse id="collapse">
       <core-icon-button onclick="buttonToggleAndHide(this)" icon="menu"></core-icon-button>
       <a href="https://www.polymer-project.org/" target="_blank"><core-icon-button icon="polymer"></core-icon-button></a>
       <a href="#null" target="_blank"><core-icon-button icon="mail"></core-icon-button></a>
       <a href="#1" target="_blank"><core-icon-button icon="settings"></core-icon-button></a>
     </core-collapse>
+    <core-icon-button id="menuButtonFooter" onclick="buttonToggleAndHide(this)" icon="menu"></core-icon-button-->
   </div>
 </body>
 
 <script>
+  function openURL(url, target) {
+    window.open(url, target);
+  }
+  /*
   function buttonToggleAndHide(elem) {
     document.getElementById('collapse').toggle();
-    var e = document.getElementById('menuButtonFooter');
-    e.style.display = (e.style.display == 'none') ? 'inline' : 'none';
-  }
+    // var e = document.getElementById('menuButtonFooter');
+    // e.style.display = (e.style.display == 'none') ? 'inline' : 'none';
+  }*/
 </script>
 </html>

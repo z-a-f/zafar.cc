@@ -1,0 +1,50 @@
+
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../../bower_components/paper-dropdown/paper-dropdown.html">
+
+<link rel="import" href="../x-trigger/x-trigger.html">
+
+
+<polymer-element name="zaf-dropdown" attributes="halign valign showCloseButton">
+  <style shim-shadowdom>
+
+  </style>
+
+  <template>
+    <link rel="stylesheet" href="zaf-dropdown.css">
+    <shadow></shadow>
+    <x-trigger icon="menu">
+      <paper-dropdown id="zafDropdown" halign="{{halign}}" valign="{{valign}}">
+        <content></content>
+        <paper-icon-button id="menuClose" icon="menu"></paper-icon-button>
+      </paper-dropdown>
+    </x-trigger>
+  </template>
+
+  <script>
+    Polymer('zaf-dropdown', {
+
+      ready: function() { },
+
+      // domReady: function() {},
+
+      toggle: function() {
+        if (!this.dropdown) {
+          this.dropdown = this.querySelector('paper-dropdown');
+        }
+        this.dropdown && this.dropdown.toggle();
+      }
+
+      /*buttonToggleAndHide: function(elem) {
+        this.$.collapse.toggle();
+      },*/
+
+      /*
+      function buttonToggleAndHide(elem) {
+        document.getElementById('collapse').toggle();
+        // var e = document.getElementById('menuButtonFooter');
+        // e.style.display = (e.style.display == 'none') ? 'inline' : 'none';
+      }*/
+    });
+  </script>
+</polymer-element>

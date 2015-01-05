@@ -1,0 +1,9 @@
+{
+  "name": "main-scaffold",
+  "private": true,
+  "dependencies": {
+    "core-collapse": "Polymer/core-collapse#master",
+    "core-icon-button": "Polymer/core-icon-button#master",
+    "paper-dropdown": "Polymer/paper-dropdown#master"
+  }
+}

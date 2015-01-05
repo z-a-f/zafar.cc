@@ -16,7 +16,11 @@
   <link rel="import" href="bower_components/core-collapse/core-collapse.html">
   <link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
   <link rel="import" href="bower_components/paper-dropdown/paper-dropdown.html">
+<<<<<<< HEAD
+  <link rel="import" href="bower_components/paper-item/paper-item.html">
+=======
   <link rel="import" href="bower_components/paper-ripple/paper-ripple.html">
+>>>>>>> 6debf759a724bcd320cba308ec43ad0944fae841
 
   <!-- Add custom elements -->
   <link rel="import" href="elements/main-scaffold/main-scaffold.html">
@@ -32,6 +36,7 @@
                   logosrc="images/lockup.svg">
     
     <core-item icon="favorite" label="Welcome" url="pages/Welcome/index.html"></core-item>
+    <paper-item><core-item icon="favorite" label="Welcome" url="pages/Welcome/index.html"></core-item></paper-item>
     <core-submenu icon="work" label="Work and Education" selectedItem="{{subItem}}">
       <core-item label="Publications" url="pages/test.html"></core-item>
       <core-item label="Courses" url="pages/test.html"></core-item>
@@ -55,7 +60,7 @@
     <zaf-dropdown halign="right">
       <paper-icon-button
         src="images/icons/github-32px.png"
-        onclick="openURL('//github.com/zafartahirov/zafar.cc','_blank')"></paper-icon-button>
+        onclick="openURL('//github.com/zafartahirov/zafar.cc', '_blank')"></paper-icon-button>
       <paper-icon-button
         icon="polymer"
         onclick="openURL('//www.polymer-project.org', '_blank')"></paper-icon-button>

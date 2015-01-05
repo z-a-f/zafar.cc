@@ -201,6 +201,8 @@ polyfill-next-selector { content: '#drawerPanel:not([narrow]) .menuButton';}
 
     .fab > core-icon {
       margin: 16px;
+      /*width: 32px;
+      height: 32px;*/
     }
 
     .fab > core-icon::shadow path {

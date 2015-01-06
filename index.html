@@ -13,11 +13,6 @@
   <!-- Add Polymer elements -->
   <link rel="import" href="bower_components/core-item/core-item.html">
   <link rel="import" href="bower_components/core-menu/core-submenu.html">
-  <link rel="import" href="bower_components/core-collapse/core-collapse.html">
-  <link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
-  <link rel="import" href="bower_components/paper-dropdown/paper-dropdown.html">
-  <link rel="import" href="bower_components/paper-item/paper-item.html">
-  <link rel="import" href="bower_components/paper-ripple/paper-ripple.html">
 
   <!-- Add custom elements -->
   <link rel="import" href="elements/main-scaffold/main-scaffold.html">
@@ -31,7 +26,7 @@
 <body unresolved>
   <main-scaffold  label="I'll change the logo later :)"
                   logosrc="images/lockup.svg">
-    
+
     <core-item icon="favorite" label="Welcome" url="pages/Welcome/index.html"></core-item>
     <!-- paper-item><core-item icon="favorite" label="Welcome" url="pages/Welcome/index.html"></core-item></paper-item -->
     <core-submenu icon="work" label="Work and Education" selectedItem="{{subItem}}">
@@ -40,18 +35,18 @@
       <core-item label="Resume" url="pages/test.html"></core-item>
     </core-submenu>
     <core-submenu icon="explore" label="Explore experiments" selectedItem="{{subItem}}">
-      <core-item label="String 2" url="pages/test2.html"></core-item>
+      <core-item label="String 2" url="pages/test.html"></core-item>
     </core-submenu>
     <core-submenu icon="account-circle" label="About me..." selectedItem="{{subItem}}">
-      <core-item label="Let me introduce" url="pages/AboutMe/index.html"></core-item>
+      <core-item label="Let me introduce" url="pages/test.html"></core-item>
       <core-item label="Resume" url="pages/test.html"></core-item>
       <core-item label="people.bu.edu/zafar" url="http://people.bu.edu/zafar/"></core-item>
     </core-submenu>
     <core-item label="Contact information" icon="mail" url="pages/test.html"></core-item>
 
-    <core-item id="menu-footer"> <!-- Consider using div here -->
+    <div id="menu-footer"> <!-- Consider using div here -->
       (c) Zafar :)
-    </core-item>
+    </div>
   </main-scaffold>
   <div id="right-footer">
     <zaf-dropdown halign="right">
@@ -62,14 +57,6 @@
         icon="polymer"
         onclick="openURL('//www.polymer-project.org', '_blank')"></paper-icon-button>
     </zaf-dropdown>
-    <!-- core-collapse id="collapse">
-      <core-icon-button onclick="buttonToggleAndHide(this)" icon="menu"></core-icon-button>
-      <a href="https://www.polymer-project.org/" target="_blank"><core-icon-button icon="polymer"></core-icon-button></a>
-      <a href="#null" target="_blank"><core-icon-button icon="mail"></core-icon-button></a>
-      <a href="#1" target="_blank"><core-icon-button icon="settings"></core-icon-button></a>
-    </core-collapse>
-    <core-icon-button id="menuButtonFooter" onclick="buttonToggleAndHide(this)" icon="menu"></core-icon-button-->
-    <!-- paper-ripple fit></paper-ripple -->
   </div>
 </body>
 
@@ -77,11 +64,5 @@
   function openURL(url, target) {
     window.open(url, target);
   }
-  /*
-  function buttonToggleAndHide(elem) {
-    document.getElementById('collapse').toggle();
-    // var e = document.getElementById('menuButtonFooter');
-    // e.style.display = (e.style.display == 'none') ? 'inline' : 'none';
-  }*/
 </script>
 </html>

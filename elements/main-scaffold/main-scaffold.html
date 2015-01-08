@@ -251,6 +251,7 @@ of the scaffold.
 
     viewSourceAction: function() {
       // window.open('view-source:' + this.$.frame.contentWindow.location.href, this.item.tag);
+      // console.log("Trying to open " + this.$.frame.contentWindow.location.href);
       try {
         window.open(this.$.frame.contentWindow.location.href, this.item.tag);
         // window.open(this.$.frame.contentWindow.location.href, '_blank');

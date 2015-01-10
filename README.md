@@ -1,6 +1,5 @@
 zafar.cc
 ========
-
 ## Setting up the current repo
 1. [Install Bower](http://bower.io/#install-bower)
 2. Run `bower install` in the root directory
@@ -9,7 +8,8 @@ zafar.cc
 
 ## Running a web server on Amazon AWS
 
-### 1. Preliminaries: SSH/HTTP/HTTPS access to EC2
-![alt text][logo]
+### Preliminaries: SSH/HTTP/HTTPS access to EC2
+#### Create security group
+![Create Security Group][amazonSecurity1]
 
-[logo]: https://www.dropbox.com/s/04greovza207p7m/amazonSecurity1.png?dl=1
+[amazonSecurity1]: https://www.dropbox.com/s/04greovza207p7m/amazonSecurity1.png?dl=1 "Create new security group"

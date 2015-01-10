@@ -11,5 +11,6 @@ zafar.cc
 ### Preliminaries: SSH/HTTP/HTTPS access to EC2
 #### Create security group
 ![Create Security Group][amazonSecurity1]
+#### Create new instance
 
 [amazonSecurity1]: https://www.dropbox.com/s/04greovza207p7m/amazonSecurity1.png?dl=1 "Create new security group"

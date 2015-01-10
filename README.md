@@ -8,9 +8,20 @@ zafar.cc
 
 ## Running a web server on Amazon AWS
 
-### Preliminaries: SSH/HTTP/HTTPS access to EC2
-#### Create security group
+### Preliminaries
+#### Create security group: SSH/HTTP/HTTPS access to EC2
 ![Create Security Group][amazonSecurity1]
-#### Create new instance
+#### Create new EC2 instance
+![Create New Instance][amazonInstance1]
+#### Follow the "new instance wizard" steps
+1. Choose an Amazon Image (Free tier Ubuntu Server 64-bit)
+2. Choose an instance type (Free tier micro)
+3. Configure instance (defaults)
+4. Configure storage (General purpose SSD - 10GiB)
+5. Tag instance (Anything)
+6. Choose the security settings for the new instance
+![Pick the instance security][amazonInstance2]
 
 [amazonSecurity1]: https://www.dropbox.com/s/04greovza207p7m/amazonSecurity1.png?dl=1 "Create new security group"
+[amazonInstance1]: https://www.dropbox.com/s/55fazphx06y77t1/amazonInstance1.png?dl=1 "Create new instance"
+[amazonInstance2]: https://www.dropbox.com/s/keptddjcdod1j6z/amazonInstance2.png?dl=1 "Select security for the new instance"

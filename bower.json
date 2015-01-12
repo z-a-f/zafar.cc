@@ -7,7 +7,9 @@
   "author": "Zafar Takhirov",
   "dependencies": {
     "core-item": "Polymer/core-item#master",
+    "core-icon": "Polymer/core-icon#master",
     "core-menu": "Polymer/core-menu#master",
+    "paper-item": "Polymer/paper-item#master",
 
     "core-drawer-panel": "Polymer/core-drawer-panel#master",
     "core-header-panel": "Polymer/core-header-panel#master",

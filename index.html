@@ -8,11 +8,15 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
 
+  <script src="main.js"></script>
   <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
 
   <!-- Add Polymer elements -->
+  <link rel="import" href="bower_components/core-icon/core-icon.html">
   <link rel="import" href="bower_components/core-item/core-item.html">
   <link rel="import" href="bower_components/core-menu/core-submenu.html">
+
+  <link rel="import" href="bower_components/paper-item/paper-item.html">
 
   <!-- Add custom elements -->
   <link rel="import" href="elements/main-scaffold/main-scaffold.html">
@@ -30,24 +34,24 @@
     <core-item icon="favorite" label="Welcome" url="pages/Welcome/index.html"></core-item>
     <!-- paper-item><core-item icon="favorite" label="Welcome" url="pages/Welcome/index.html"></core-item></paper-item -->
     <core-submenu icon="work" label="Work and Education" selectedItem="{{subItem}}">
-      <core-item label="Publications" url="pages/test.html"></core-item>
-      <core-item label="Courses" url="pages/test.html"></core-item>
-      <core-item label="Resume" url="pages/test.html"></core-item>
+      <core-item label="Publications" url="pages/UnderConstruction/index.html"></core-item>
+      <core-item label="Courses" url="pages/UnderConstruction/index.html"></core-item>
+      <core-item label="Resume" url="pages/UnderConstruction/index.html"></core-item>
     </core-submenu>
     <core-submenu icon="explore" label="Explore experiments" selectedItem="{{subItem}}">
-      <core-item label="String 2" url="pages/test.html"></core-item>
+      <core-item label="String 2" url="pages/UnderConstruction/index.html"></core-item>
     </core-submenu>
     <core-submenu icon="account-circle" label="About me..." selectedItem="{{subItem}}">
-      <core-item label="Let me introduce" url="pages/test.html"></core-item>
-      <core-item label="Resume" url="pages/test.html"></core-item>
+      <core-item label="Let me introduce" url="pages/UnderConstruction/index.html"></core-item>
+      <core-item label="Resume" url="pages/UnderConstruction/index.html"></core-item>
       <core-item label="people.bu.edu/zafar" url="http://people.bu.edu/zafar/"></core-item>
     </core-submenu>
-    <core-item label="Contact information" icon="mail" url="pages/test.html"></core-item>
-
-    <div id="menu-footer"> <!-- Consider using div here -->
-      (c) Zafar :)
-    </div>
+    <core-item label="Contact information" icon="mail" url="pages/UnderConstruction/index.html"></core-item>
+    <paper-item>
+      <a href="#null" layout horizontal center>(c) Zafar :)</a>
+    </paper-item>
   </main-scaffold>
+
   <div id="right-footer">
     <zaf-dropdown halign="right">
       <paper-icon-button

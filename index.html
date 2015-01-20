@@ -1,72 +1,72 @@
 
 <!doctype html>
 <html>
-<head>
-  <title>Zafar's Test Page</title>
+  <head>
+    <title>Zafar's Test Page</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
 
-  <script src="http://www.polymer-project.org/components/webcomponentsjs/webcomponents.js"></script>
+    <script src="http://www.polymer-project.org/components/webcomponentsjs/webcomponents.js"></script>
 
-  <!-- Add Polymer elements -->
-  <link rel="import" href="http://www.polymer-project.org/components/core-icon/core-icon.html">
-  <link rel="import" href="http://www.polymer-project.org/components/core-item/core-item.html">
-  <link rel="import" href="http://www.polymer-project.org/components/core-menu/core-submenu.html">
+    <!-- Add Polymer elements -->
+    <link rel="import" href="http://www.polymer-project.org/components/core-icon/core-icon.html">
+    <link rel="import" href="http://www.polymer-project.org/components/core-item/core-item.html">
+    <link rel="import" href="http://www.polymer-project.org/components/core-menu/core-submenu.html">
 
-  <link rel="import" href="http://www.polymer-project.org/components/paper-item/paper-item.html">
+    <link rel="import" href="http://www.polymer-project.org/components/paper-item/paper-item.html">
 
-  <!-- Add custom elements -->
-  <link rel="import" href="elements/main-scaffold/main-scaffold.html">
-  <link rel="import" href="elements/x-trigger/x-trigger.html">
-  <link rel="import" href="elements/zaf-dropdown/zaf-dropdown.html">
+    <!-- Add custom elements -->
+    <link rel="import" href="elements/main-scaffold/main-scaffold.html">
+    <link rel="import" href="elements/x-trigger/x-trigger.html">
+    <link rel="import" href="elements/zaf-dropdown/zaf-dropdown.html">
 
-  <script src="main.js"></script>
-  <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
 
-</head>
+  </head>
 
-<body unresolved>
-  <main-scaffold  label="I'll change the logo later :)"
-                  logosrc="images/lockup.svg">
+  <body unresolved>
+    <main-scaffold  label="I'll change the logo later :)"
+                    logosrc="images/lockup.svg">
 
-    <core-item icon="favorite" label="Welcome" url="pages/UnderConstruction/index.html"></core-item>
-    <!-- paper-item><core-item icon="favorite" label="Welcome" url="pages/Welcome/index.html"></core-item></paper-item -->
-    <core-submenu icon="work" label="Work and Education" selectedItem="{{subItem}}">
-      <core-item label="Publications" url="pages/UnderConstruction/index.html"></core-item>
-      <core-item label="Courses" url="pages/UnderConstruction/index.html"></core-item>
-      <core-item label="Resume" url="pages/UnderConstruction/index.html"></core-item>
-    </core-submenu>
-    <core-submenu icon="explore" label="Explore experiments" selectedItem="{{subItem}}">
-      <core-item label="String 2" url="pages/UnderConstruction/index.html"></core-item>
-    </core-submenu>
-    <core-submenu icon="account-circle" label="About me..." selectedItem="{{subItem}}">
-      <core-item label="Let me introduce" url="pages/UnderConstruction/index.html"></core-item>
-      <core-item label="Resume" url="pages/UnderConstruction/index.html"></core-item>
-      <core-item label="people.bu.edu/zafar" url="http://people.bu.edu/zafar/"></core-item>
-    </core-submenu>
-    <core-item label="Contact information" icon="mail" url="pages/UnderConstruction/index.html"></core-item>
-    <paper-item>
-      <a href="mailto:cc.rafaz@zafar.cc" layout horizontal center>(c) Zafar :)</a>
-    </paper-item>
-  </main-scaffold>
+      <core-item icon="favorite" label="Welcome" url="pages/UnderConstruction/index.html"></core-item>
+      <!-- paper-item><core-item icon="favorite" label="Welcome" url="pages/Welcome/index.html"></core-item></paper-item -->
+      <core-submenu icon="work" label="Work and Education" selectedItem="{{subItem}}">
+	<core-item label="Publications" url="pages/UnderConstruction/index.html"></core-item>
+	<core-item label="Courses" url="pages/UnderConstruction/index.html"></core-item>
+	<core-item label="Resume" url="pages/UnderConstruction/index.html"></core-item>
+      </core-submenu>
+      <core-submenu icon="explore" label="Explore experiments" selectedItem="{{subItem}}">
+	<core-item label="String 2" url="pages/UnderConstruction/index.html"></core-item>
+      </core-submenu>
+      <core-submenu icon="account-circle" label="About me..." selectedItem="{{subItem}}">
+	<core-item label="Let me introduce" url="pages/UnderConstruction/index.html"></core-item>
+	<core-item label="Resume" url="pages/UnderConstruction/index.html"></core-item>
+	<core-item label="people.bu.edu/zafar" url="http://people.bu.edu/zafar/"></core-item>
+      </core-submenu>
+      <core-item label="Contact information" icon="mail" url="pages/UnderConstruction/index.html"></core-item>
+      <paper-item>
+	<a href="mailto:cc.rafaz@zafar.cc" layout horizontal center>(c) Zafar :)</a>
+      </paper-item>
+    </main-scaffold>
 
-  <div id="right-footer">
-    <zaf-dropdown halign="right">
-      <paper-icon-button
-        src="images/icons/github-32px.png"
-        onclick="openURL('//github.com/zafartahirov/zafar.cc', '_blank')"></paper-icon-button>
-      <paper-icon-button
-        icon="polymer"
-        onclick="openURL('//www.polymer-project.org', '_blank')"></paper-icon-button>
-    </zaf-dropdown>
-  </div>
-</body>
+    <div id="right-footer">
+      <zaf-dropdown halign="right">
+	<paper-icon-button
+           src="images/icons/github-32px.png"
+           onclick="openURL('//github.com/zafartahirov/zafar.cc', '_blank')"></paper-icon-button>
+	<paper-icon-button
+           icon="polymer"
+           onclick="openURL('//www.polymer-project.org', '_blank')"></paper-icon-button>
+      </zaf-dropdown>
+    </div>
+  </body>
 
-<script>
-  function openURL(url, target) {
+  <script>
+    function openURL(url, target) {
     window.open(url, target);
-  }
-</script>
+    }
+  </script>
 </html>

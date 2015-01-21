@@ -21,10 +21,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 }
 
 core-toolbar {
-    background-color: #69f0ae;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
+    background-color: #FF9800;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 core-toolbar.medium-tall {
@@ -184,12 +184,13 @@ polyfill-next-selector { content: '#drawerPanel:not([narrow]) .menuButton';}
 
     /* FAB */
     .fab {
+	top: 16px;
       position: relative;
       display: inline-block;
       width: 56px;
       height: 56px;
       border-radius: 50%;
-      color: #fff;
+      color: #FFF;
       overflow: hidden;
       transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
       transition-delay: 0.2s;
@@ -206,6 +207,10 @@ polyfill-next-selector { content: '#drawerPanel:not([narrow]) .menuButton';}
 
     .fab.green {
       background-color: #0f9d58;
+    }
+
+    .fab.orange {
+	background-color: #FFD180;
     }
 
     .fab:active {

@@ -81,7 +81,7 @@ of the scaffold.
           <div class="sourceButton fallback">
             <core-tooltip label="Open in new window" class="fancy">
               <!-- core-icon-button icon="launch"></core-icon-button -->
-              <div class="fab blue">
+              <div class="fab red">
                 <core-icon icon="launch"></core-icon>
                 <paper-ripple class="circle recenteringTouch" fit></paper-ripple>
               </div>
@@ -104,7 +104,7 @@ of the scaffold.
       <core-toolbar class="{{ {'medium-tall' : !narrow} | tokenList }}">
         <div class="bottom main-label fit">
           <div flex hidden?= {{narrow}} class="logo-container" center horizontal>
-            <a href="/"><img src={{logosrc}}></a>
+            <a href="/"><img src={{logosrc}} width="240px"></a>
           </div>
           <div><a href="/">{{label}}</a></div>
         </div>

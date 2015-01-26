@@ -138,7 +138,8 @@ polyfill-next-selector { content: '#drawerPanel:not([narrow]) .menuButton';}
 #frame {
   display: block;
   width: 100%;
-  min-height: 600px;
+  min-height: 800px;
+  height: 100%;
   border: none;
 }
 

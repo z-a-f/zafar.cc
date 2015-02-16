@@ -10,8 +10,10 @@
 
   <script src="http://www.polymer-project.org/components/webcomponentsjs/webcomponents.js"></script>
 
-  <link rel="import" href="http://www.polymer-project.org/components/core-image/core-image.html">
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
 
+  <link rel="import" href="http://www.polymer-project.org/components/core-image/core-image.html">
   <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -19,10 +21,14 @@
 <body>
   <h1>Working hard to build this website!</h1>
   <core-image
-    preload
-    src="./images/nyc-construction.jpg"
-    style="width:500px; height:500px"
-    sizing="contain"/>
+     preload
+     src="./images/nyc-construction.jpg"
+     style="width:500px; height:500px"
+     sizing="contain"/>
+  <br>
+  <canvas id="myCanvas"></canvas>
+  <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 </body>
 
 <script>

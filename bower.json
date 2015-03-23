@@ -1,30 +1,33 @@
 {
-  "name": "Zafar's Page",
-  "description": "Zafar's personal website",
-  "homepage": "www.zafar.cc",
-  "keywords": [
-  ],
-  "author": "Zafar Takhirov",
-  "dependencies": {
-    "core-item": "Polymer/core-item#master",
-    "core-icon": "Polymer/core-icon#master",
-    "core-menu": "Polymer/core-menu#master",
-    "paper-item": "Polymer/paper-item#master",
+	"name": "Zafar's Page",
+	"description": "Zafar's personal website",
+	"homepage": "www.zafar.cc",
+	"keywords": [
+	],
+	"author": "Zafar Takhirov",
+	"dependencies": {
+		"core-item": "Polymer/core-item#master",
+		"core-icon": "Polymer/core-icon#master",
+		"core-menu": "Polymer/core-menu#master",
+		"paper-item": "Polymer/paper-item#master",
 
-    "core-drawer-panel": "Polymer/core-drawer-panel#master",
-    "core-header-panel": "Polymer/core-header-panel#master",
-    "core-icon": "Polymer/core-icon#master",
-    "core-icon-button": "Polymer/core-icon-button#master",
-    "core-menu": "Polymer/core-menu#master",
-    "core-toolbar": "Polymer/core-toolbar#master",
-    "core-tooltip": "Polymer/core-tooltip#master",
-    "paper-toast": "Polymer/paper-toast#master",
-    "paper-ripple": "Polymer/paper-ripple#master",
+		"core-drawer-panel": "Polymer/core-drawer-panel#master",
+		"core-header-panel": "Polymer/core-header-panel#master",
+		"core-icon": "Polymer/core-icon#master",
+		"core-icon-button": "Polymer/core-icon-button#master",
+		"core-menu": "Polymer/core-menu#master",
+		"core-toolbar": "Polymer/core-toolbar#master",
+		"core-tooltip": "Polymer/core-tooltip#master",
+		"paper-toast": "Polymer/paper-toast#master",
+		"paper-ripple": "Polymer/paper-ripple#master",
 
-    "paper-icon-button": "Polymer/paper-icon-button#master",
-    "paper-dropdown": "Polymer/paper-dropdown#master",
+		"paper-icon-button": "Polymer/paper-icon-button#master",
+		"paper-dropdown": "Polymer/paper-dropdown#master",
 
-    "core-icon-button": "Polymer/core-icon-button#master",
-    "paper-dropdown": "Polymer/paper-dropdown#master"
-  }
+		"core-icon-button": "Polymer/core-icon-button#master",
+		"paper-dropdown": "Polymer/paper-dropdown#master",
+		
+		"core-image": "Polymer/core-image#master"
+		
+	}
 }

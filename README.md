@@ -7,3 +7,6 @@ zafar.cc
 4. Add links to your pages in the main `index.html` (just follow the template in there)
 
 [Check Wiki for details on setting up a web server](https://github.com/zafartahirov/zafar.cc/wiki)
+
+## Version History:
+0. Initial creation (date lost  LOL).
